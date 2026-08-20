@@ -29,6 +29,13 @@ O briefing completo, os conjuntos de dados e os critérios de avaliação serão
 
 Ao final do hackathon, as melhores soluções serão doadas para a cidade do Rio de Janeiro, contribuindo para transformar os protótipos desenvolvidos durante o evento em iniciativas de impacto real.
 
+## Equipe
+
+- **Kadu Bruns** — [kadubruns@gmail.com](mailto:kadubruns@gmail.com)
+- **Werônica Oliveira** — [weronicasoliveira@gmail.com](mailto:weronicasoliveira@gmail.com)
+- **Caio Silva** — [the.caiosilva@gmail.com](mailto:the.caiosilva@gmail.com)
+- **Erick Muniz** — [curvello.muniz@gmail.com](mailto:curvello.muniz@gmail.com)
+
 ## Status do projeto
 
 > Em preparação. Os detalhes da solução serão adicionados após a divulgação oficial do desafio.
