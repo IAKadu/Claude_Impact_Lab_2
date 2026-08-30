@@ -1,5 +1,5 @@
-import { FilaVivaDashboard } from './fila-viva-dashboard';
+import { CrecheIntake } from './creche-intake';
 
 export default function Home() {
-  return <FilaVivaDashboard />;
+  return <CrecheIntake />;
 }

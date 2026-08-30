@@ -1,13 +1,14 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import 'leaflet/dist/leaflet.css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Cera Pro', var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -49,76 +50,80 @@
 }
 
 body {
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: 'Cera Pro', var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 :root {
-  --background: oklch(0.982 0.008 95);
-  --foreground: oklch(0.25 0.035 248);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.035 248);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.035 248);
-  --primary: oklch(0.47 0.105 185);
-  --primary-foreground: oklch(0.99 0.004 180);
-  --secondary: oklch(0.955 0.012 190);
-  --secondary-foreground: oklch(0.31 0.055 190);
-  --muted: oklch(0.957 0.008 95);
-  --muted-foreground: oklch(0.52 0.025 245);
-  --accent: oklch(0.93 0.038 75);
-  --accent-foreground: oklch(0.34 0.07 55);
-  --destructive: oklch(0.59 0.18 27);
-  --border: oklch(0.9 0.012 245);
-  --input: oklch(0.89 0.014 245);
-  --ring: oklch(0.55 0.11 185);
-  --chart-1: oklch(0.52 0.12 185);
-  --chart-2: oklch(0.63 0.14 145);
-  --chart-3: oklch(0.73 0.13 75);
-  --chart-4: oklch(0.61 0.13 25);
-  --chart-5: oklch(0.5 0.09 245);
-  --radius: 0.8rem;
-  --sidebar: oklch(0.97 0.008 95);
-  --sidebar-foreground: oklch(0.25 0.035 248);
-  --sidebar-primary: oklch(0.47 0.105 185);
-  --sidebar-primary-foreground: oklch(0.99 0.004 180);
-  --sidebar-accent: oklch(0.93 0.038 75);
-  --sidebar-accent-foreground: oklch(0.34 0.07 55);
-  --sidebar-border: oklch(0.9 0.012 245);
-  --sidebar-ring: oklch(0.55 0.11 185);
+  --rio-navy: #13335a;
+  --rio-blue: #2a688f;
+  --rio-sky: #42b9eb;
+  --rio-gray: #eceded;
+  --background: #f4f6f8;
+  --foreground: #13335a;
+  --card: #ffffff;
+  --card-foreground: #13335a;
+  --popover: #ffffff;
+  --popover-foreground: #13335a;
+  --primary: #13335a;
+  --primary-foreground: #ffffff;
+  --secondary: #eceded;
+  --secondary-foreground: #13335a;
+  --muted: #eceded;
+  --muted-foreground: #52677d;
+  --accent: #dff4fc;
+  --accent-foreground: #13335a;
+  --destructive: #a23241;
+  --border: #d7dfe6;
+  --input: #c9d3dd;
+  --ring: #42b9eb;
+  --chart-1: #13335a;
+  --chart-2: #2a688f;
+  --chart-3: #42b9eb;
+  --chart-4: #6c7f92;
+  --chart-5: #8bcfe9;
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #13335a;
+  --sidebar-primary: #13335a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #dff4fc;
+  --sidebar-accent-foreground: #13335a;
+  --sidebar-border: #d7dfe6;
+  --sidebar-ring: #42b9eb;
 }
 
 .dark {
-  --background: oklch(0.2 0.028 248);
-  --foreground: oklch(0.96 0.01 95);
-  --card: oklch(0.24 0.032 248);
-  --card-foreground: oklch(0.96 0.01 95);
-  --popover: oklch(0.24 0.032 248);
-  --popover-foreground: oklch(0.96 0.01 95);
-  --primary: oklch(0.7 0.12 180);
-  --primary-foreground: oklch(0.18 0.04 190);
-  --secondary: oklch(0.29 0.035 230);
-  --secondary-foreground: oklch(0.94 0.01 95);
-  --muted: oklch(0.28 0.027 248);
-  --muted-foreground: oklch(0.72 0.025 235);
-  --accent: oklch(0.38 0.07 70);
-  --accent-foreground: oklch(0.95 0.02 85);
-  --destructive: oklch(0.7 0.17 25);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.66 0.12 180);
-  --chart-1: oklch(0.7 0.12 180);
-  --chart-2: oklch(0.71 0.14 145);
-  --chart-3: oklch(0.75 0.13 75);
-  --chart-4: oklch(0.7 0.14 25);
-  --chart-5: oklch(0.69 0.1 245);
-  --sidebar: oklch(0.22 0.03 248);
-  --sidebar-foreground: oklch(0.96 0.01 95);
-  --sidebar-primary: oklch(0.7 0.12 180);
-  --sidebar-primary-foreground: oklch(0.18 0.04 190);
-  --sidebar-accent: oklch(0.38 0.07 70);
-  --sidebar-accent-foreground: oklch(0.95 0.02 85);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.66 0.12 180);
+  --background: #0d2746;
+  --foreground: #ffffff;
+  --card: #13335a;
+  --card-foreground: #ffffff;
+  --popover: #13335a;
+  --popover-foreground: #ffffff;
+  --primary: #42b9eb;
+  --primary-foreground: #13335a;
+  --secondary: #21496f;
+  --secondary-foreground: #ffffff;
+  --muted: #21496f;
+  --muted-foreground: #c3d1de;
+  --accent: #2a688f;
+  --accent-foreground: #ffffff;
+  --destructive: #dc6975;
+  --border: rgb(255 255 255 / 14%);
+  --input: rgb(255 255 255 / 20%);
+  --ring: #42b9eb;
+  --chart-1: #42b9eb;
+  --chart-2: #8bcfe9;
+  --chart-3: #ffffff;
+  --chart-4: #6fa6c6;
+  --chart-5: #b8dbe9;
+  --sidebar: #13335a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #42b9eb;
+  --sidebar-primary-foreground: #13335a;
+  --sidebar-accent: #2a688f;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(255 255 255 / 14%);
+  --sidebar-ring: #42b9eb;
 }
 
 @layer base {
@@ -127,9 +132,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    background-image:
-      radial-gradient(circle at 8% 0%, color-mix(in oklch, var(--primary) 7%, transparent), transparent 26rem),
-      linear-gradient(to bottom, color-mix(in oklch, var(--background) 96%, white), var(--background));
     min-height: 100vh;
   }
   html {
@@ -146,36 +148,50 @@ body {
   .metric-card::after {
     position: absolute;
     inset: 0 auto 0 0;
-    width: 3px;
+    width: 4px;
     border-radius: var(--radius) 0 0 var(--radius);
     background: var(--metric-color, var(--primary));
     content: '';
   }
 
-  .metric-card[data-tone='amber'] { --metric-color: oklch(0.72 0.14 75); }
-  .metric-card[data-tone='teal'] { --metric-color: oklch(0.52 0.12 185); }
-  .metric-card[data-tone='green'] { --metric-color: oklch(0.62 0.14 145); }
-  .metric-card[data-tone='rose'] { --metric-color: oklch(0.63 0.16 20); }
+  .metric-card[data-tone='amber'] {
+    --metric-color: #2a688f;
+  }
+  .metric-card[data-tone='teal'] {
+    --metric-color: #42b9eb;
+  }
+  .metric-card[data-tone='green'] {
+    --metric-color: #25805d;
+  }
+  .metric-card[data-tone='rose'] {
+    --metric-color: #a23241;
+  }
 
   .metric-icon {
     display: grid;
     width: 2rem;
     height: 2rem;
     place-items: center;
-    border-radius: 0.65rem;
-    background: color-mix(in oklch, var(--metric-color, var(--primary)) 13%, transparent);
+    border-radius: 0.375rem;
+    background: color-mix(
+      in srgb,
+      var(--metric-color, var(--primary)) 13%,
+      transparent
+    );
     color: var(--metric-color, var(--primary));
   }
 
   .offer-card {
-    box-shadow: 0 20px 50px -34px color-mix(in oklch, var(--primary) 52%, transparent);
+    box-shadow: 0 20px 50px -38px
+      color-mix(in srgb, var(--primary) 52%, transparent);
   }
 
   .territory-tile {
-    border: 1px solid color-mix(in oklch, var(--territory-color) 28%, var(--border));
+    border: 1px solid
+      color-mix(in srgb, var(--territory-color) 28%, var(--border));
     border-radius: var(--radius);
-    background: color-mix(in oklch, var(--territory-color) 13%, white);
-    color: color-mix(in oklch, var(--territory-color) 74%, var(--foreground));
+    background: color-mix(in srgb, var(--territory-color) 11%, white);
+    color: color-mix(in srgb, var(--territory-color) 74%, var(--foreground));
     padding: 1rem;
     outline: none;
     transition:
@@ -186,20 +202,114 @@ body {
 
   .territory-tile:hover {
     transform: translateY(-2px);
-    border-color: color-mix(in oklch, var(--territory-color) 52%, var(--border));
-    box-shadow: 0 16px 32px -26px color-mix(in oklch, var(--territory-color) 72%, transparent);
+    border-color: color-mix(in srgb, var(--territory-color) 52%, var(--border));
+    box-shadow: 0 16px 32px -26px
+      color-mix(in srgb, var(--territory-color) 72%, transparent);
   }
 
   .territory-tile:focus-visible,
   .territory-tile.is-selected {
     border-color: var(--territory-color);
-    box-shadow: 0 0 0 3px color-mix(in oklch, var(--territory-color) 18%, transparent);
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--territory-color) 18%, transparent);
   }
 
-  .territory-tile[data-level='critical'] { --territory-color: oklch(0.58 0.17 27); }
-  .territory-tile[data-level='high'] { --territory-color: oklch(0.67 0.14 60); }
-  .territory-tile[data-level='attention'] { --territory-color: oklch(0.61 0.11 105); }
-  .territory-tile[data-level='stable'] { --territory-color: oklch(0.53 0.1 175); }
+  .territory-tile[data-level='critical'] {
+    --territory-color: #a23241;
+  }
+  .territory-tile[data-level='high'] {
+    --territory-color: #13335a;
+  }
+  .territory-tile[data-level='attention'] {
+    --territory-color: #2a688f;
+  }
+  .territory-tile[data-level='stable'] {
+    --territory-color: #6c7f92;
+  }
+
+  .brand-heading {
+    font-family:
+      'Cera Pro', var(--font-geist-sans), Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .brand-title-triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.18em;
+    border-right: 0.22em solid transparent;
+    border-bottom: 0.43em solid var(--rio-sky);
+    border-left: 0.22em solid transparent;
+    transform: translateY(-0.03em);
+  }
+
+  .brand-product-mark {
+    width: 0;
+    height: 0;
+    border-right: 0.55rem solid transparent;
+    border-bottom: 1rem solid var(--rio-sky);
+    border-left: 0.55rem solid transparent;
+  }
+
+  .brand-hero {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .brand-hero::after {
+    position: absolute;
+    z-index: -1;
+    top: -1.25rem;
+    right: 0;
+    width: min(28rem, 38vw);
+    height: 7rem;
+    background:
+      linear-gradient(150deg, transparent 50%, rgb(66 185 235 / 10%) 50%) 0 0 /
+        3rem 3rem,
+      linear-gradient(30deg, transparent 50%, rgb(19 51 90 / 5%) 50%) 1.5rem 0 /
+        3rem 3rem;
+    content: '';
+    mask-image: linear-gradient(to left, black, transparent);
+    pointer-events: none;
+  }
+
+  .brand-dark-pattern {
+    /* !important needed: this sits in @layer components, which Tailwind
+       always ranks below @layer utilities, so the Card primitive's own
+       `bg-card` utility would otherwise win the cascade and hide the
+       navy background (and the white text on top of it). */
+    background-color: var(--rio-navy) !important;
+    background-image:
+      linear-gradient(150deg, transparent 50%, rgb(66 185 235 / 12%) 50%),
+      linear-gradient(30deg, transparent 50%, rgb(255 255 255 / 4%) 50%);
+    background-position:
+      right top,
+      calc(100% - 1.5rem) top;
+    background-size: 3rem 3rem;
+  }
+
+  .intake-leaflet-map {
+    width: 100%;
+    height: 520px;
+    background: var(--rio-gray);
+  }
+
+  .intake-leaflet-map .leaflet-control-attribution {
+    font-size: 9px;
+  }
+
+  .otimizador-leaflet-map {
+    width: 100%;
+    height: 560px;
+    background: var(--rio-gray);
+  }
+
+  .otimizador-leaflet-map .leaflet-control-attribution {
+    font-size: 9px;
+  }
 
   .section-enter {
     animation: section-enter 220ms ease-out both;

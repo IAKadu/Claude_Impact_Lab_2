@@ -1,0 +1,12 @@
+{
+  "ano_referencia": 2025,
+  "total_fila_espera": 16210,
+  "total_vagas_ociosas_parceiras": 4611,
+  "criancas_na_fila_sem_vaga_local": 15855,
+  "criancas_fila_deficit_confirmado_parceiras": 5137,
+  "criancas_fila_capacidade_publica_desconhecida": 10718,
+  "unidades_em_descompasso": 722,
+  "unidades_com_fila": 809,
+  "unidades_parceiras_com_vaga_ociosa": 398,
+  "creches_cobertas": 591
+}

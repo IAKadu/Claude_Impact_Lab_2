@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://fila-viva-creche.kadubruns.chatgpt.site'),
-  title: 'Fila Viva | Orquestração auditável de vagas',
+  metadataBase: new URL('http://localhost:3000'),
+  title: 'Fila Viva | Da inscrição à matrícula',
   description:
-    'Coordene vagas de creche, preferências e convocações sem alterar a ordem oficial da fila.',
+    'Integre localização, preferências, validação e coordenação de vagas sem alterar a ordem oficial da fila.',
   applicationName: 'Fila Viva',
   alternates: {
     canonical: '/',
@@ -26,23 +26,23 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Fila Viva',
-    description: 'Orquestração auditável de vagas',
+    description: 'Da inscrição à coordenação auditável de vagas',
     type: 'website',
     locale: 'pt_BR',
     images: [
       {
-        url: '/fila-viva-social-card.png',
-        width: 1672,
-        height: 941,
-        alt: 'Fila Viva — Orquestração auditável de vagas',
+        url: '/fila-viva-social-card.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Fila Viva — Da inscrição à coordenação auditável de vagas',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Fila Viva',
-    description: 'Orquestração auditável de vagas',
-    images: ['/fila-viva-social-card.png'],
+    description: 'Da inscrição à coordenação auditável de vagas',
+    images: ['/fila-viva-social-card.svg'],
   },
   robots: {
     index: false,

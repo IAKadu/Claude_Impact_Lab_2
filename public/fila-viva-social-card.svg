@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#13335A"/>
+  <path d="M780 630L990 266L1200 630H780Z" fill="#2A688F"/>
+  <path d="M900 630L1050 370L1200 630H900Z" fill="#42B9EB"/>
+  <path d="M990 630L1095 448L1200 630H990Z" fill="white" fill-opacity="0.94"/>
+  <path d="M930 266L990 162L1050 266H930Z" fill="#42B9EB" fill-opacity="0.2"/>
+  <path d="M1050 370L1125 240L1200 370H1050Z" fill="white" fill-opacity="0.08"/>
+  <path d="M96 96H176L136 165.282L96 96Z" fill="#42B9EB"/>
+  <text x="96" y="230" fill="#42B9EB" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="3">DA INSCRIÇÃO À MATRÍCULA</text>
+  <text x="90" y="353" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="900" letter-spacing="-3">FILA VIVA</text>
+  <path d="M626 346L647 310L668 346H626Z" fill="#42B9EB"/>
+  <text x="96" y="428" fill="white" fill-opacity="0.78" font-family="Arial, Helvetica, sans-serif" font-size="30">Preferências, validação e coordenação</text>
+  <text x="96" y="474" fill="white" fill-opacity="0.78" font-family="Arial, Helvetica, sans-serif" font-size="30">auditável em um único fluxo.</text>
+  <line x1="96" y1="536" x2="608" y2="536" stroke="white" stroke-opacity="0.18" stroke-width="2"/>
+  <text x="96" y="577" fill="white" fill-opacity="0.62" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="2">PROTÓTIPO FUNCIONAL · AMBIENTE LOCAL</text>
+</svg>

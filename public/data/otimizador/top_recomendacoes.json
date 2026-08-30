@@ -1,0 +1,542 @@
+[
+  {
+    "esc_codigo": 7013,
+    "nome": "CP ESPAÇO DE EDUCAÇÃO INFANTIL CIDADE DE DEUS",
+    "cre": 7,
+    "bairro": "CIDADE DE DEUS / JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 320,
+    "vagas_ociosas_local": 0,
+    "deficit": 320,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7014,
+    "nome": "CP CENTRO INTEGRADO SÃO JOSÉ",
+    "cre": 7,
+    "bairro": "CIDADE DE DEUS / JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 270,
+    "vagas_ociosas_local": 0,
+    "deficit": 270,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7042,
+    "nome": "CP INSTITUTO EDUCACIONAL DIVA ALVES II",
+    "cre": 7,
+    "bairro": "JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 205,
+    "vagas_ociosas_local": 0,
+    "deficit": 205,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7003,
+    "nome": "CP CRECHE ESCOLA MÃE ASTÉRIA",
+    "cre": 7,
+    "bairro": "TAQUARA / JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 182,
+    "vagas_ociosas_local": 0,
+    "deficit": 182,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7040,
+    "nome": "CP CRECHE VALE DO SOL PRAÇA SECA",
+    "cre": 7,
+    "bairro": "JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 131,
+    "vagas_ociosas_local": 0,
+    "deficit": 131,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7041,
+    "nome": "CP CRECHE VALE DO SOL TAQUARA",
+    "cre": 7,
+    "bairro": "TAQUARA / JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 130,
+    "vagas_ociosas_local": 0,
+    "deficit": 130,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7036,
+    "nome": "CP CAAD UNIVERSO ENCANTADO",
+    "cre": 7,
+    "bairro": "JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 95,
+    "vagas_ociosas_local": 0,
+    "deficit": 95,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 8009,
+    "nome": "CP ASSOCIAÇÃO RECREATIVA PINGUINHO DE GENTE",
+    "cre": 8,
+    "bairro": "SENADOR CAMARÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 92,
+    "vagas_ociosas_local": 1,
+    "deficit": 91,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 8015,
+      "nome": "CP CEM CRECHE ESCOLA MACHADO",
+      "vagas_ociosas": 57,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7038,
+    "nome": "CP CAAD UNIVERSO DAS FLORES",
+    "cre": 7,
+    "bairro": "VILA VALQUEIRE",
+    "grupamento": "Bercario",
+    "fila_espera": 90,
+    "vagas_ociosas_local": 0,
+    "deficit": 90,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 5001,
+    "nome": "CP ASSOCIAÇÃO AMIGOS DA CRIANÇA - CRECHE ROCHA MIRANDA",
+    "cre": 5,
+    "bairro": "ROCHA MIRANDA",
+    "grupamento": "Bercario",
+    "fila_espera": 83,
+    "vagas_ociosas_local": 0,
+    "deficit": 83,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 5016,
+      "nome": "CP ASSOCIAÇÃO EDUCACIONAL E CULTURAL SÃO BERNARDO - CSB",
+      "vagas_ociosas": 1,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 7040,
+    "nome": "CP CRECHE VALE DO SOL PRAÇA SECA",
+    "cre": 7,
+    "bairro": "JACAREPAGUÁ",
+    "grupamento": "Maternal I",
+    "fila_espera": 83,
+    "vagas_ociosas_local": 0,
+    "deficit": 83,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7035,
+      "nome": "CP AEMMAC - ANIL",
+      "vagas_ociosas": 29,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 3014,
+    "nome": "CP CRECHE PLANTANDO O AMANHÃ",
+    "cre": 3,
+    "bairro": "DEL CASTILHO",
+    "grupamento": "Bercario",
+    "fila_espera": 80,
+    "vagas_ociosas_local": 0,
+    "deficit": 80,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 3022,
+      "nome": "CP INSTITUTO AVANTE ELITE DO FUTURO",
+      "vagas_ociosas": 37,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7034,
+    "nome": "CP INSTITUTO EDUCACIONAL DIVA ALVES",
+    "cre": 7,
+    "bairro": "JACAREPAGUÁ",
+    "grupamento": "Bercario",
+    "fila_espera": 80,
+    "vagas_ociosas_local": 0,
+    "deficit": 80,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7027,
+      "nome": "CP CRECHE MUNDO MÁGICO I",
+      "vagas_ociosas": 22,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 4015,
+    "nome": "CP ESPAÇO DE EDUCAÇÃO INFANTIL VILA DO JOÃO",
+    "cre": 4,
+    "bairro": "MANGUINHOS",
+    "grupamento": "Bercario",
+    "fila_espera": 95,
+    "vagas_ociosas_local": 16,
+    "deficit": 79,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 4011,
+      "nome": "CP CRECHE E PRÉ-ESCOLA NOVA JERUSALÉM",
+      "vagas_ociosas": 20,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 4040,
+    "nome": "CP ASSOCIAÇÃO CENTRO EDUCACIONAL REBRAL X",
+    "cre": 4,
+    "bairro": "JARDIM AMÉRICA",
+    "grupamento": "Bercario",
+    "fila_espera": 79,
+    "vagas_ociosas_local": 0,
+    "deficit": 79,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 4011,
+      "nome": "CP CRECHE E PRÉ-ESCOLA NOVA JERUSALÉM",
+      "vagas_ociosas": 20,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 5015,
+    "nome": "CP AEMMAC - ROCHA MIRANDA",
+    "cre": 5,
+    "bairro": "ROCHA MIRANDA",
+    "grupamento": "Bercario",
+    "fila_espera": 78,
+    "vagas_ociosas_local": 0,
+    "deficit": 78,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 5016,
+      "nome": "CP ASSOCIAÇÃO EDUCACIONAL E CULTURAL SÃO BERNARDO - CSB",
+      "vagas_ociosas": 1,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 3026,
+    "nome": "CP CHALÉ SEMENTINHA",
+    "cre": 3,
+    "bairro": "HIGIENÓPOLIS",
+    "grupamento": "Bercario",
+    "fila_espera": 69,
+    "vagas_ociosas_local": 0,
+    "deficit": 69,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 3022,
+      "nome": "CP INSTITUTO AVANTE ELITE DO FUTURO",
+      "vagas_ociosas": 37,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 10052,
+    "nome": "CP CRECHE COMUNITÁRIA DEUS É FIEL - UNIDADE VII",
+    "cre": 10,
+    "bairro": "GUARATIBA",
+    "grupamento": "Maternal I",
+    "fila_espera": 70,
+    "vagas_ociosas_local": 1,
+    "deficit": 69,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 10068,
+      "nome": "CP CRECHE COMUNITÁRIA TIA NEIDE - GUARATIBA",
+      "vagas_ociosas": 12,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 3006,
+    "nome": "CP CRECHE CASA VIVA",
+    "cre": 3,
+    "bairro": "ENGENHO DE DENTRO",
+    "grupamento": "Bercario",
+    "fila_espera": 62,
+    "vagas_ociosas_local": 0,
+    "deficit": 62,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 3022,
+      "nome": "CP INSTITUTO AVANTE ELITE DO FUTURO",
+      "vagas_ociosas": 37,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 4027,
+    "nome": "CP ASSOCIAÇÃO CENTRO EDUCACIONAL REBRAL IV",
+    "cre": 4,
+    "bairro": "VIGÁRIO GERAL",
+    "grupamento": "Bercario",
+    "fila_espera": 59,
+    "vagas_ociosas_local": 0,
+    "deficit": 59,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 4011,
+      "nome": "CP CRECHE E PRÉ-ESCOLA NOVA JERUSALÉM",
+      "vagas_ociosas": 20,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 3037,
+    "nome": "CP CRECHE FRUTOS DO AMANHÃ I",
+    "cre": 3,
+    "bairro": "INHAÚMA",
+    "grupamento": "Bercario",
+    "fila_espera": 56,
+    "vagas_ociosas_local": 2,
+    "deficit": 54,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 3022,
+      "nome": "CP INSTITUTO AVANTE ELITE DO FUTURO",
+      "vagas_ociosas": 37,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 8004,
+    "nome": "CP CRECHE COMUNITÁRIA NINO",
+    "cre": 8,
+    "bairro": "VILA KENNEDY",
+    "grupamento": "Bercario",
+    "fila_espera": 60,
+    "vagas_ociosas_local": 8,
+    "deficit": 52,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 8015,
+      "nome": "CP CEM CRECHE ESCOLA MACHADO",
+      "vagas_ociosas": 57,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 8010,
+    "nome": "CP ASSOCIAÇÃO CENTRO EDUCACIONAL REBRAL III",
+    "cre": 8,
+    "bairro": "REALENGO",
+    "grupamento": "Bercario",
+    "fila_espera": 49,
+    "vagas_ociosas_local": 0,
+    "deficit": 49,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 8015,
+      "nome": "CP CEM CRECHE ESCOLA MACHADO",
+      "vagas_ociosas": 57,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 10081,
+    "nome": "CP CENTRO EDUCACIONAL ESTRELA DO AMANHÃ",
+    "cre": 10,
+    "bairro": "GUARATIBA",
+    "grupamento": "Maternal I",
+    "fila_espera": 46,
+    "vagas_ociosas_local": 0,
+    "deficit": 46,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 10068,
+      "nome": "CP CRECHE COMUNITÁRIA TIA NEIDE - GUARATIBA",
+      "vagas_ociosas": 12,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 7038,
+    "nome": "CP CAAD UNIVERSO DAS FLORES",
+    "cre": 7,
+    "bairro": "VILA VALQUEIRE",
+    "grupamento": "Maternal I",
+    "fila_espera": 45,
+    "vagas_ociosas_local": 0,
+    "deficit": 45,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7035,
+      "nome": "CP AEMMAC - ANIL",
+      "vagas_ociosas": 29,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 10073,
+    "nome": "CP NINHO CARIOCA",
+    "cre": 10,
+    "bairro": "GUARATIBA",
+    "grupamento": "Bercario",
+    "fila_espera": 41,
+    "vagas_ociosas_local": 0,
+    "deficit": 41,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 10036,
+      "nome": "CP CAAD DONA ZULMIRA TELLES",
+      "vagas_ociosas": 20,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7003,
+    "nome": "CP CRECHE ESCOLA MÃE ASTÉRIA",
+    "cre": 7,
+    "bairro": "TAQUARA / JACAREPAGUÁ",
+    "grupamento": "Maternal I",
+    "fila_espera": 40,
+    "vagas_ociosas_local": 0,
+    "deficit": 40,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7035,
+      "nome": "CP AEMMAC - ANIL",
+      "vagas_ociosas": 29,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 7041,
+    "nome": "CP CRECHE VALE DO SOL TAQUARA",
+    "cre": 7,
+    "bairro": "TAQUARA / JACAREPAGUÁ",
+    "grupamento": "Maternal I",
+    "fila_espera": 40,
+    "vagas_ociosas_local": 0,
+    "deficit": 40,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 7035,
+      "nome": "CP AEMMAC - ANIL",
+      "vagas_ociosas": 29,
+      "match": "cre"
+    }
+  },
+  {
+    "esc_codigo": 2029,
+    "nome": "CP CASA DA CRIANÇA",
+    "cre": 2,
+    "bairro": "BOTAFOGO",
+    "grupamento": "Bercario",
+    "fila_espera": 40,
+    "vagas_ociosas_local": 2,
+    "deficit": 38,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 2019,
+      "nome": "CP UNIDAS - OBRAS SOCIAIS UNIDAS DE SANTA MARTA",
+      "vagas_ociosas": 7,
+      "match": "bairro"
+    }
+  },
+  {
+    "esc_codigo": 2039,
+    "nome": "CP CRECHE ESCOLA MENINOS DE LUZ",
+    "cre": 2,
+    "bairro": "COPACABANA",
+    "grupamento": "Bercario",
+    "fila_espera": 34,
+    "vagas_ociosas_local": 0,
+    "deficit": 34,
+    "rede": "parceira",
+    "capacidade_conhecida": true,
+    "alternativa": {
+      "esc_codigo": 2037,
+      "nome": "CP CRECHE COMUNITÁRIA CANTINHO DA NATUREZA",
+      "vagas_ociosas": 5,
+      "match": "bairro"
+    }
+  }
+]
