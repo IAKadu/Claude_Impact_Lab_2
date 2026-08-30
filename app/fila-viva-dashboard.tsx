@@ -31,6 +31,7 @@ import {
   UserCheck,
   Users,
   Waypoints,
+  X,
 } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
@@ -70,7 +71,6 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Textarea } from '@/components/ui/textarea';
-import { Toaster, toast } from '@/components/ui/toast';
 import { cn } from '@/lib/utils';
 
 type Section = 'operacao' | 'territorio' | 'auditoria';
@@ -326,6 +326,11 @@ export function FilaVivaDashboard() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [channels, setChannels] = useState({ whatsapp: true, phone: true, email: false });
   const [operatorNote, setOperatorNote] = useState('');
+  const [notice, setNotice] = useState<{
+    title: string;
+    description: string;
+    type: 'success' | 'info';
+  } | null>(null);
 
   const visibleVacancies = useMemo(
     () => vacancies.filter((vacancy) =>
@@ -415,6 +420,10 @@ export function FilaVivaDashboard() {
     setSelectedAuditEvent(event.id);
   }
 
+  function showNotice(title: string, description: string, type: 'success' | 'info' = 'success') {
+    setNotice({ title, description, type });
+  }
+
   function startOffer() {
     const selectedChannels = Object.entries(channels).filter(([, enabled]) => enabled).map(([channel]) => channel);
     if (!selectedChannels.length) return;
@@ -424,7 +433,7 @@ export function FilaVivaDashboard() {
     appendEvent('contact_attempted', 'Primeira tentativa de contato registrada', `Tentativa multicanal registrada com conteúdo mínimo.${operatorNote ? ' Nota operacional anexada.' : ''}`);
     setDialogOpen(false);
     setOperatorNote('');
-    toast.add({ title: 'Convocação iniciada', description: 'A oferta foi bloqueada para uma única criança e entrou na trilha auditável.', type: 'success' });
+    showNotice('Convocação iniciada', 'A oferta foi bloqueada para uma única criança e entrou na trilha auditável.');
   }
 
   function advanceStage() {
@@ -445,17 +454,16 @@ export function FilaVivaDashboard() {
     setOfferStages((current) => ({ ...current, [activeVacancy.id]: nextStage }));
     const event = eventByStage[currentStage];
     appendEvent(event.type, event.label, event.proof);
-    toast.add({
-      title: stageMeta[nextStage].label,
-      description: nextStage === 'enrolled' ? 'O ciclo foi concluído e a vaga saiu da fila operacional.' : 'A transição foi registrada sem alterar a ordem oficial.',
-      type: 'success',
-    });
+    showNotice(
+      stageMeta[nextStage].label,
+      nextStage === 'enrolled' ? 'O ciclo foi concluído e a vaga saiu da fila operacional.' : 'A transição foi registrada sem alterar a ordem oficial.',
+    );
   }
 
   function recordContact(channel: string) {
     setAttempts((current) => ({ ...current, [activeVacancy.id]: (current[activeVacancy.id] ?? 0) + 1 }));
     appendEvent('contact_attempted', `Nova tentativa por ${channel} registrada`, 'Resultado pendente; horário e operador preservados no log append-only.');
-    toast.add({ title: 'Tentativa registrada', description: `O contato por ${channel} foi anexado à oferta ${activeVacancy.id}.`, type: 'info' });
+    showNotice('Tentativa registrada', `O contato por ${channel} foi anexado à oferta ${activeVacancy.id}.`, 'info');
   }
 
   function exportAuditLog() {
@@ -466,7 +474,7 @@ export function FilaVivaDashboard() {
     anchor.download = 'fila-viva-eventos-demonstrativos.json';
     anchor.click();
     URL.revokeObjectURL(url);
-    toast.add({ title: 'Trilha exportada', description: 'O arquivo JSON contém apenas identificadores e dados demonstrativos.', type: 'success' });
+    showNotice('Trilha exportada', 'O arquivo JSON contém apenas identificadores e dados demonstrativos.');
   }
 
   function resetDemo() {
@@ -474,14 +482,13 @@ export function FilaVivaDashboard() {
     setAttempts({});
     setAuditEvents(initialEvents);
     setSelectedAuditEvent(initialEvents[0].id);
-    toast.add({ title: 'Demonstração reiniciada', description: 'Os eventos simulados voltaram ao estado inicial.', type: 'info' });
+    showNotice('Demonstração reiniciada', 'Os eventos simulados voltaram ao estado inicial.', 'info');
   }
 
   const selectedChannelCount = Object.values(channels).filter(Boolean).length;
 
   return (
-    <Toaster>
-      <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground">
         <div className="border-b border-amber-200/70 bg-amber-50 px-4 py-2 text-center text-xs font-medium text-amber-950">
           Ambiente demonstrativo · dados e identidades ilustrativos · nenhuma ação altera a fila oficial
         </div>
@@ -741,6 +748,25 @@ export function FilaVivaDashboard() {
           <footer className="mt-6 flex flex-col gap-2 border-t py-4 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between"><p>Protótipo funcional · cenário ilustrativo para piloto em modo shadow</p><div className="flex items-center gap-1.5"><Clock3 className="size-3.5" />Toda alteração local gera um evento auditável</div></footer>
         </div>
 
+        {notice && (
+          <div
+            role="status"
+            aria-live="polite"
+            className="fixed bottom-4 right-4 z-50 flex w-[calc(100%-2rem)] max-w-sm items-start gap-3 rounded-xl border bg-card p-4 shadow-xl"
+          >
+            <span className={cn('grid size-8 shrink-0 place-items-center rounded-full bg-sky-100 text-sky-700', notice.type === 'success' && 'bg-emerald-100 text-emerald-700')}>
+              {notice.type === 'success' ? <CheckCircle2 className="size-4" /> : <CircleDot className="size-4" />}
+            </span>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold">{notice.title}</p>
+              <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{notice.description}</p>
+            </div>
+            <Button variant="ghost" size="icon-sm" onClick={() => setNotice(null)} aria-label="Fechar notificação">
+              <X />
+            </Button>
+          </div>
+        )}
+
         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader><DialogTitle className="text-lg">Iniciar convocação</DialogTitle><DialogDescription>Crie uma oferta única para {eligibleCandidate.id} e registre a primeira tentativa de contato.</DialogDescription></DialogHeader>
@@ -751,7 +777,6 @@ export function FilaVivaDashboard() {
             <DialogFooter><DialogClose render={<Button variant="outline" />}>Cancelar</DialogClose><Button onClick={startOffer} disabled={selectedChannelCount === 0}><UserCheck /> Confirmar e registrar</Button></DialogFooter>
           </DialogContent>
         </Dialog>
-      </main>
-    </Toaster>
+    </main>
   );
 }
