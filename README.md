@@ -31,6 +31,8 @@ Ao final do hackathon, as melhores soluções serão doadas para a cidade do Rio
 
 ## Equipe
 
+**Nome da equipe:** Creche Rio Inteligente 35
+
 - **Kadu Bruns** — [kadubruns@gmail.com](mailto:kadubruns@gmail.com)
 - **Werônica Oliveira** — [weronicasoliveira@gmail.com](mailto:weronicasoliveira@gmail.com)
 - **Caio Silva** — [the.caiosilva@gmail.com](mailto:the.caiosilva@gmail.com)
@@ -77,7 +79,7 @@ automatiza decisões de direito — ver os guardrails e limites detalhados em
 
 ## Status do projeto
 
-> MVP funcional, validado localmente. Ver `fila-viva/DOCUMENTACAO.md` para escopo implementado,
+> MVP funcional, validado localmente. Ver `DOCUMENTACAO.md` para escopo implementado,
 > limites conhecidos e gates necessários antes de qualquer piloto conectado à SME-Rio.
 
 ---
