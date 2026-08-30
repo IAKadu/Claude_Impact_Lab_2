@@ -75,7 +75,7 @@ automatiza decisões de direito — ver os guardrails e limites detalhados em
 
 - **Aplicação:** não publicada nesta etapa — rodar localmente conforme
   [`DOCUMENTACAO.md`](DOCUMENTACAO.md) (seção "Como testar localmente").
-- **Vídeo demo:** _pendente._
+- **Vídeo demo:** [`Demo.mp4`](Demo.mp4) (comprimido de 321 MB para 24 MB para caber no GitHub; mesma duração e resolução).
 
 ## Status do projeto
 
