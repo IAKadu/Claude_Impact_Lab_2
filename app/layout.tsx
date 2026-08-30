@@ -13,10 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://fila-viva-creche.kadubruns.chatgpt.site'),
   title: 'Fila Viva | Orquestração auditável de vagas',
   description:
     'Coordene vagas de creche, preferências e convocações sem alterar a ordem oficial da fila.',
   applicationName: 'Fila Viva',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/favicon.svg',
   },
